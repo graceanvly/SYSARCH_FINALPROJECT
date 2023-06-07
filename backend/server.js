@@ -17,6 +17,8 @@ app.use((req, res, next) => {
 
 //routes
 app.use('/api/employee',employeeRoutes)
+const jobsRouter = require('./routes/jobs');
+app.use('/jobs', jobsRouter);
 
 //connect to DB
 mongoose.connect(process.env.MONGO_URI)
