@@ -96,7 +96,7 @@ const EmployeeDetails = ({ employee }) => {
             {employee.lastname}
           </p>
           <p>
-            <strong>Salary: </strong>
+            <strong>Expected Salary: </strong>
             {employee.salary}
           </p>
           <p>
@@ -110,6 +110,12 @@ const EmployeeDetails = ({ employee }) => {
             size="small"
             onClick={handleUpdate}>
             Update
+          </button>
+          <button
+            style={{ color: "black" }}
+            size="small"
+            >
+            Hire Applicant
           </button>
         </>
       )}
